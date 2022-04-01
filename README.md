@@ -10,7 +10,18 @@
 ---
 #### Results
 ---
-##### 
+##### The first step of this analysis was to take out the dishonest grades from the ninth graders test scores from Thomas High School, this was done by cleaning the code. The code used is below:
+```
+student_data_df.loc[(student_data_df["grade"]=="9th") & (student_data_df["school_name"]=="Thomas High School") , "reading_score"] = np.nan
+
+student_data_df.loc[(student_data_df["grade"]=="9th") & (student_data_df["school_name"]=="Thomas High School") , "math_score"] = np.nan
+
+school_data_complete_df = pd.merge(student_data_df, school_data_df, how="left", on=["school_name", "school_name"])
+
+school_data_complete_df.head()
+```
+##### This section of code locates all of the 9th graders test scores at Thomas High School and replaces them with Null values, or NaN. This allowed for a cleaner data set and this is where most of the original module code and the challenge code merged from here on out. Let's compare the two codes and how the results differed after cleaning the data below: 
+* ##### The below table is a summary 
 ---
 #### Summary
 ---
