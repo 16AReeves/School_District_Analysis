@@ -4,11 +4,11 @@
 ---
 ### Analysis on School district funding and standardized testing scores
 ---
-#### Background of Project
+### Background of Project
 ---
 ##### Analysis of difference school metrics was undertaken to analyze for trends in reading and math scores along with district's key metrics. This was to help Maria, a chief data scientist for a city school district, analyze student funding and test scores. In the original module, all data was analyzed to help make these decisions. The data was corrected, to take out ninth graders test scores from Thomas High School, due to academic dishonesty. This analysis was then used to help the district make decisions based on the findings below.
 ---
-#### Results
+### Results
 ---
 ##### The first step of this analysis was to take out the dishonest grades from the ninth graders test scores from Thomas High School, this was done by cleaning the code. The code used is below:
 ```
@@ -136,6 +136,6 @@ Scores by School Type Before Correction: | Scores by School Type After Correctio
 ![Module_Code_Scores_By_School_Type](https://user-images.githubusercontent.com/98365963/161327308-5ae24acb-515b-4eea-913d-d39f1746694e.png) | ![Challenge_Code_Scores_By_School_Type](https://user-images.githubusercontent.com/98365963/161327340-860882a9-9d2c-41da-a711-c64095d3354e.png)
 ##### The above tables and charts show the summary of the changes in math and reading scores by grade, scores by school spending, scores by school size, and scores by school type. The math and reading scores by grade chart did not change other than the fact that the ninth graders scores are summarized by a NaN, meaning the data for that group is blank. The scores by school spending chart had no change in the overall resulting scores. The scores by school size chart had no change in the overall resulting scores. The scores by school type chart had no change in the overall resulting scores.  
 --- 
-#### Summary
+### Summary
 ---
 ##### After taking out the ninth graders scores, the overall district summary scores changed by less than 0.1% or less. The overall school summary scores changed by 0.3% or less. The overall performance from Thomas High School did not change, since the ranking for the high school among the other schools had no change. The overall scores based on math and reading, school size, school spending, and school type had no change after the ninth graders were removed. 
